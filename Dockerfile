@@ -8,6 +8,7 @@ WORKDIR /app
 COPY environment.yml .
 
 COPY data data
+COPY notebooks notebooks
 
 # Create a new conda environment and install the dependencies
 RUN conda env create -f environment.yml
